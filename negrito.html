@@ -15,7 +15,7 @@
             if(li.innerText.toLowerCase().startsWith(filtro)){
                 li.style.fontWeight = 'bold';
             }
-            else{
+            if(filtro == ""){
                 li.style.fontWeight = 'normal';
             }
         }
