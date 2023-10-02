@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function teste() {
+            let tabuadaarray = [];
+            for(let i = 1; i <= 10; i++){
+                let tabuada = i*document.getElementById('campo-numero').value;
+                tabuadaarray.push(tabuada)
+                document.getElementById('valor-form').innerHTML = `tabuada: ${tabuadaarray}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+    <input type="number" id="campo-numero" oninput="teste()">
+    <div id="valor-form"></div>
+    </form>
+</body>
+</html>
